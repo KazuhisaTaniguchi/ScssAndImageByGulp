@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+html{
+	font-family: Quicksand,'メイリオ',Meiryo,'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro',sans-serif;
+	font-size: 16px;
+	margin: 0;
+	padding:0;
+}
+
+body{
+	color:#252525;
+	line-height:1.4;
+	text-align: center;
+	z-index: 0;
+	word-break : break-all;
+  z-index: 0;
+  overflow-x:hidden;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+
+body, div, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ul, ol, li,
+brockquote, pre, table, caption, th, td, address,
+form, fieldset, legend, object {
+  margin: 0;
+  padding: 0;
+  font-weight:normal;
+}
+h1,h2,h3,h4,h5{
+	margin: 0;
+}
+
+.content_out{
+	padding-top: 80px;
+	padding-bottom: 200px;
+}
+
+////////////　フォ－ム
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"]
+{
+	font-family: 'メイリオ',Meiryo,'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro',sans-serif;
+}
+
+li{
+	list-style:none;
+}
+
+a{
+	transition: all 0.1s;
+	-webkit-transform: translatez(0);
+	color:#333;
+}
+
+a:link,
+a:visited,
+a:active,
+a:hover {
+	outline: none;
+	transition: all 0.1s;
+	color:#333;
+	text-decoration: none;
+}
+
+
+a:hover img{
+  opacity: 0.8;
+	cursor:pointer;
+}
+
+a, ins {
+  text-decoration: none;
+}
+
+address, em, cite, dfn, var {
+  font-style: normal;
+}
+
+input, textarea {
+  font-family: sans-serif;
+  font-weight: normal;
+}
+
+img{
+	vertical-align:bottom;
+}
+
+a img {
+  border: none;
+}

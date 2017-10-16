@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+// $res1800: 1800;
+// $res1700: 1700;
+// $res1600: 1600;
+// $res1500: 1500;
+// $res1550: 1550;
+// $res1400: 1400;
+// $res1300: 1300;
+// $res1200: 1200;
+// $res1100: 1100;
+// $res1024: 1024;
+$res900: 900;
+$res800: 800;
+$break: 768;
+// $res600: 600;
+// $res500: 500;
+// $res400: 400;
+$iphone7plus: 414;
+$iphone7: 375;
+$iphonese: 320;
+
+// @mixin font01 {
+//   font-family: 'メイリオ', Meiryo, 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
+// }
+// @mixin font01 {
+//   font-family: "游ゴシック", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif;
+// }
+
+@mixin fontsize($size: 24, $base: 16) {
+  font-size: $size + px;
+  font-size: ($size / $base) * 1rem;
+}
+
+@mixin boxafter{
+  &:after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+ /////////////opacity/////////////
+
+  @mixin opacity($type:0.6)
+  {
+    filter:alpha(opacity=$type*100);
+    -moz-opacity: $type;
+    opacity: $type;
+  }
+/////////////レスポンシブ/////////////
+
+@mixin res($size){
+  @media only screen and (max-width: $size + "px") {
+    @content;
+  }
+}
+
+@mixin res_min($size){
+  @media only screen and (min-width: $size + "px") {
+    @content;
+  }
+}
